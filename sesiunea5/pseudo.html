@@ -14,7 +14,7 @@
             font-size: 40px;
         } */
 
-        a[target= "_blank"] {
+        /* a[target= "_blank"] {
             border: 1px solid blue;
         }
 
@@ -33,6 +33,24 @@
 
         p {
             color: brown;
+        } */
+
+        p::after {
+            content: " this is the extra content";
+            color: red;
+        }
+
+        p::before {
+            content: "this is added before ";
+            color: blue;
+        }
+
+        .target::selection {
+            color: yellow;
+        }
+        
+        ::marker {
+            color: red
         }
     </style>
 </head>
@@ -44,6 +62,15 @@
     <h4>Pseudo elemente</h4>
     <!-- <p style="color: red;">This is a paragraph 1</p> -->
     <!-- <p id="paragraph2">This is a paragraph 2</p> -->
-    <p class="paragraph3" id="paragraph2" style="color: red; border: none;">This is a paragraph 3</p>
-    <p>This is a paragraph 4</p>
+    <!-- <p class="paragraph3" id="paragraph2" style="color: red; border: none;">This is a paragraph 3</p> -->
+    <p>This is a paragraph</p>
+    <p class="target">This is a paragraph</p>
+    <ol>
+        <li>sare</li>
+        <li>zahar</li>
+        <li>faina</li>
+        <li>unt</li>
+        <li>ciocolata</li>
+        <div style="display: list-item;">piept de pui</div>
+    </ol>
 </html>
